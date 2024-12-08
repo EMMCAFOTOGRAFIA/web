@@ -1,0 +1,155 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 1000vh;
+  font-family: Arial, sans-serif; /* Establece la fuente del texto a Arial y, si no está disponible, a cualquier fuente sans-serif. */
+  margin: 0; /* Elimina los márgenes por defecto del navegador. */
+  padding: 0; /* Elimina el padding por defecto del navegador. */
+  box-sizing: border-box; /* Cambia el modelo de caja para que el padding y los bordes se incluyan en el ancho y alto total del elemento. */
+  display: flex; /* Utiliza un diseño flexbox para el contenedor principal. */
+  flex-direction: column; /* Organiza los elementos secundarios en una columna. */
+  min-height: 100vh; /* Asegura que el contenedor principal tenga al menos la altura de la ventana gráfica. */
+}
+header {
+  background-color: chocolate;
+  padding: 15px;
+  text-align: right;
+  background-color: chocolate;
+  padding: 15px;
+  text-align: right;
+  background-color: chocolate; /* Color de fondo azul para el encabezado. */
+  padding: 15px; /* Espaciado interno de 15 píxeles. */
+  text-align: right; /* Alinea el texto a la derecha. */
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  display: flex; /* Utiliza un diseño flexbox para el menú de navegación. */
+  justify-content: flex-end;
+}
+NAV UL {
+  list-style-type: none;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 20px;
+}
+NAV UL LI {
+  display: inline;
+  margin-right: 20px;
+}
+NAV UL LI A {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  
+}
+
+nav ul li ul.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(153, 87, 87, 0.1);
+  z-index: 1;
+}
+
+nav ul li ul.submenu li {
+  width: 90px; /* Ajusta el ancho si es necesario */
+}
+
+nav ul li ul.submenu li a {
+  padding: 10px;
+  background-color: #ffffffe0;
+  color: #333;
+  display: block;
+  text-align: left;
+}
+
+/* Mostrar el menú desplegable cuando el usuario pasa el ratón por encima */
+nav ul li:hover ul.submenu{
+  display: block;
+}
+  
+
+
+
+/* Opcional: agregar estilo a los enlaces del menú cuando el ratón pasa por encima */
+nav ul li ul.submenu li a:hover {
+  background-color: #ddd;
+}
+
+
+
+
+.banner {
+  background-color: rgb(156, 115, 88);
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+form {
+  width: 90%; /* Ajusta el ancho del formulario al 90% en pantallas pequeñas. */
+}
+form {
+  display: flex; /* Utiliza flexbox para organizar los elementos del formulario. */
+  flex-direction: column; /* Organiza los elementos del formulario en una columna. */
+  width: 50%; /* Ancho del formulario al 50% del contenedor. */
+  background-color: rgb(
+    211,
+    110,
+    110
+  ); /* Color de fondo blanco para el formulario. */
+  padding: 30px; /* Espaciado interno de 30 píxeles. */
+  border-radius: 10px; /* Bordes redondeados. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del formulario. */
+}
+form label {
+  margin-bottom: 5px; /* Margen inferior de 5 píxeles para las etiquetas. */
+}
+
+form {
+  width: 85%; /* Ajusta el ancho del formulario al 90% en pantallas pequeñas. */
+}
+
+.main-coninter {
+  grid-template-columns: 1fr;
+  background-color: hsl(
+    16,
+    26%,
+    53%
+  ); /* Color de fondo melocotón para las cajas de cursos e información. */
+  padding: 50px; /* Espaciado interno de 10 píxeles. */
+  margin-bottom: 10px; /* Margen inferior de 10 píxeles. */
+  border-radius: 5px; /* Bordes redondeados. */
+}
+.videos-section {
+  grid-template-columns: 1fr;
+  background-color: #9e6c59; /* Color de fondo melocotón para las cajas de cursos e información. */
+  padding: 50px; /* Espaciado interno de 10 píxeles. */
+  margin-bottom: 10px; /* Margen inferior de 10 píxeles. */
+  border-radius: 5px; /* Bordes redondeados. */
+}
+
+.banner img {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor. */
+  height: auto; /* Mantiene la proporción de la imagen. */
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px; /* Ajusta el tamaño del ícono */
+  height: 60px;
+  margin-right: 20px; /* Espacio entre el ícono y el nombre del sitio */
+}
+
