@@ -153,3 +153,9 @@ form {
   margin-right: 20px; /* Espacio entre el ícono y el nombre del sitio */
 }
 
+.container {  
+  display: grid;  
+  grid-gap: 5px;  
+  grid-template-columns: repeat(auto-fit, 100px);
+  grid-template-rows: repeat(2, 100px);  
+}
